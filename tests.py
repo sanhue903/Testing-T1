@@ -1,5 +1,6 @@
 import pytest
 import ohce_kata as ok
+from datetime import time
 
 def test_reverse():
     assert ok.ohce("hola") == "aloh"
@@ -19,5 +20,11 @@ def test_is_not_polindrome():
     assert ok.palindrome("hola", ok.ohce("hola")) == None
     assert ok.palindrome("chao", ok.ohce("chao")) == None
     assert ok.palindrome("python", ok.ohce("python")) == None
+    
+def test_salute():
+    name = "Seba"
+    assert ok.salute(name, time(9,20)) == f"Buenos días {name}!"
+    assert ok.salute(name, time(11,59)) == f"Buenas días {name}!"
+    assert ok.salute(name, time(6,0)) == f"Buenas días {name}!"
     
     
