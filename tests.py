@@ -9,7 +9,7 @@ def test_reverse():
     assert ok.ohce("chao") == "oahc"
 
 def test_is_polindrome():
-    string = "!Bonita palabra!"
+    string = "¡Bonita palabra!"
     assert ok.palindrome("oto", ok.ohce("oto")) == string
     assert ok.palindrome("ana", ok.ohce("ana")) == string
     assert ok.palindrome("reconocer", ok.ohce("reconocer")) == string
