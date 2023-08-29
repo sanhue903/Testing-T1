@@ -18,10 +18,8 @@ def salute(name, time):
     
     return f"Buenas noches {name}!"
 
-def stop(name, string):
+def stop(string):
     if string == "Stop!":
-        print (f"Adios {name}")
-        
         return True
     
     return False
@@ -31,8 +29,14 @@ if __name__ == "__main__":
     
     print(salute(name,datetime.now().time()))
     
-    while (True):
+    keep_going = True
+    while (keep_going):
         string = input()
+        
+        if (stop(string)):
+            keep_going = False
+            continue
+            
         inversed_string = ohce(string)
         print(inversed_string)
         
@@ -40,6 +44,7 @@ if __name__ == "__main__":
         if is_palindrome is not None:
             print(is_palindrome)
         
+    print(f"Adios {name}")
         
             
         
