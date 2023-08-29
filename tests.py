@@ -27,4 +27,10 @@ def test_salute():
     assert ok.salute(name, time(11,59)) == f"Buenos días {name}!"
     assert ok.salute(name, time(6,0)) == f"Buenos días {name}!"
     
+def test_salute_afternoon():
+    name = "Seba"
+    assert ok.salute(name, time(12,0)) == f"Buenas tardes {name}!"
+    assert ok.salute(name, time(19,59)) == f"Buenas tardes {name}!"
+    assert ok.salute(name, time(16,0)) == f"Buenas tardes {name}!"
+    
     
