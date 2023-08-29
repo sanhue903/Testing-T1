@@ -9,8 +9,15 @@ def test_reverse():
 
 def test_is_polindrome():
     string = "!Bonita palabra!"
-    assert ok.palindrome("oto") == string
-    assert ok.palindrome("ana") == string
-    assert ok.palindrome("reconocer") == string
-    assert ok.palindrome("oro") == string
+    assert ok.palindrome("oto", ok.ohce("oto")) == string
+    assert ok.palindrome("ana", ok.ohce("ana")) == string
+    assert ok.palindrome("reconocer", ok.ohce("reconocer")) == string
+    assert ok.palindrome("oro", ok.ohce("oro")) == string
+    
+def test_is_not_polindrome():
+    assert ok.palindrome("sebas", ok.ohce("sebas")) == None
+    assert ok.palindrome("hola", ok.ohce("hola")) == None
+    assert ok.palindrome("chao", ok.ohce("chao")) == None
+    assert ok.palindrome("python", ok.ohce("python")) == None
+    
     
