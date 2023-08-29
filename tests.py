@@ -14,4 +14,3 @@ def test_is_polindrome():
     assert ok.palindrome("reconocer") == string
     assert ok.palindrome("oro") == string
     
-    
