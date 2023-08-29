@@ -1,2 +1,2 @@
 def ohce(string):
-    pass
+    return string[::-1]
