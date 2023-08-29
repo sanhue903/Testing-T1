@@ -18,6 +18,14 @@ def salute(name, time):
     
     return f"Buenas noches {name}!"
 
+def stop(name, string):
+    if string == "Stop!":
+        print (f"Adios {name}")
+        
+        return True
+    
+    return False
+
 if __name__ == "__main__":
     name = "Seba"
     
