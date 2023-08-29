@@ -7,5 +7,11 @@ def palindrome(string, inverted_string):
     
     return 
 
+def salute(name, time):
+    if time.hour >= 6 and time.hour < 12:
+        return f"Buenos días {name}!"
+    
+    return
+
 if __name__ == "__main__":
     pass

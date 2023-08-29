@@ -24,7 +24,7 @@ def test_is_not_polindrome():
 def test_salute():
     name = "Seba"
     assert ok.salute(name, time(9,20)) == f"Buenos días {name}!"
-    assert ok.salute(name, time(11,59)) == f"Buenas días {name}!"
-    assert ok.salute(name, time(6,0)) == f"Buenas días {name}!"
+    assert ok.salute(name, time(11,59)) == f"Buenos días {name}!"
+    assert ok.salute(name, time(6,0)) == f"Buenos días {name}!"
     
     
