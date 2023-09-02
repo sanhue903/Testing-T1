@@ -33,7 +33,10 @@ def start(string):
 
 
 if __name__ == "__main__":
-    name = "Seba"
+    name = None
+    
+    while (name is None):
+        name = start(input())
     
     print(salute(name,datetime.now().time()))
     
