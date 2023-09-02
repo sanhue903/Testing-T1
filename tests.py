@@ -1,4 +1,5 @@
 import pytest
+from unittest.mock import patch
 import ohce_kata as ok
 from datetime import time
 
@@ -43,5 +44,7 @@ def test_stop():
     assert ok.stop("Stop!") == True
     
 def test_start():
-    assert ok.salute("ohce seba") == True
+    assert ok.start("ohce seba") == "seba"
+    assert ok.start("ohce sandro") == "sandro"
+    assert ok.start("ohce pedro m") == "pedro"
 

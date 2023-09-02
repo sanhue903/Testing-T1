@@ -24,6 +24,14 @@ def stop(string):
     
     return False
 
+def start(string):
+    partes = string.split()
+    
+    if partes[0] == "ohce":
+        return partes[1]
+        
+
+
 if __name__ == "__main__":
     name = "Seba"
     
