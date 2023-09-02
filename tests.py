@@ -47,4 +47,7 @@ def test_start():
     assert ok.start("ohce seba") == "seba"
     assert ok.start("ohce sandro") == "sandro"
     assert ok.start("ohce pedro m") == "pedro"
+    
+def test_start_none():
+    assert ok.start("hola") == None
 
