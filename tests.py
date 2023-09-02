@@ -40,6 +40,8 @@ def test_salute_night():
     assert ok.salute(name, time(23,0)) == f"Buenas noches {name}!"
     
 def test_stop():
-    name = "Seba"
-    assert ok.stop(name, "Stop!") == True
+    assert ok.stop("Stop!") == True
     
+def test_start():
+    assert ok.salute("ohce seba") == True
+
